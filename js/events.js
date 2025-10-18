@@ -1,16 +1,8 @@
 // Function to load events from JSON and populate the events container
 async function loadEvents() {
     try {
-        // Fetch the events JSON file
-        const response = await fetch('./json/event.json');
-        
-        // Check if the request was successful
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        
-        // Parse the JSON data
-        const data = await response.json();
+        // Use the cache manager utility for fetching JSON
+        const data = await fetchJSON('./json/event.json');
         
         // Find the events container element
         const eventsContainer = document.getElementById('events_container');

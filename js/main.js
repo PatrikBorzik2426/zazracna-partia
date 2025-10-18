@@ -1,16 +1,8 @@
 // Function to load content from JSON and populate HTML elements
 async function loadContent() {
     try {
-        // Fetch the JSON file
-        const response = await fetch('./json/main.json');
-        
-        // Check if the request was successful
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        
-        // Parse the JSON data
-        const data = await response.json();
+        // Use the cache manager utility for fetching JSON
+        const data = await fetchJSON('./json/main.json');
         
         // Iterate through each key-value pair in the JSON
         Object.keys(data).forEach(key => {
