@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+@import "tailwindcss";
+@import "tailwindcss-animated";
+
+
+@theme{
+    --font-cherry: 'Cherry Bomb One', sans-serif;
+    --color-primary: #327E80;
+    --color-secondary: #C44F29;
+    --color-background: #E9D9B4;
+}

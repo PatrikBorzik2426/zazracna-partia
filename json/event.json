@@ -1,0 +1,17 @@
+{
+    "events":[
+        {
+            "date": "12.07.2025",
+            "place": "Bratislava, Sad Janka Kráľa",
+            "title": "Letný detský festival",
+            "description": "Príďte si užiť deň plný hier, tvorivých dielní a zábavy pre celú rodinu na našom letnom detskom festivale!",
+            "activities": [
+                "Tvorivé dielne",
+                "Bábkové divadlo",
+                "Maľovanie na tvár",
+                "Balóniková šou"
+            ],
+            "link": "https://www.zazracnapartia.sk/letny-detsky-festival"
+        }
+    ]
+}
