@@ -28,5 +28,21 @@ async function loadContent() {
 // Call the function when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', loadContent);
 
+// Add scroll to events functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const scrollButton = document.getElementById('scroll-to-events');
+    if (scrollButton) {
+        scrollButton.addEventListener('click', function() {
+            const eventsSection = document.getElementById('akcie');
+            if (eventsSection) {
+                eventsSection.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start' 
+                });
+            }
+        });
+    }
+});
+
 // Alternative: You can also call it manually
 // loadContent();

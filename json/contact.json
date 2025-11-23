@@ -1,0 +1,12 @@
+{
+    "contact_title": "Kontaktujte nás",
+    "contact_description": "Máte otázky alebo chcete si objednať naše služby? Neváhajte nás kontaktovať!",
+    "address_title": "Adresa",
+    "address": "Zázračná partia<br>Ulice 123<br>Bratislava, Slovensko 811 01",
+    "phone_title": "Telefón",
+    "phone": "+421 123 456 789",
+    "email_title": "Email",
+    "email": "<a href='mailto:info@zazracnapartia.sk' class='text-secondary hover:text-primary transition-colors'>info@zazracnapartia.sk</a>",
+    "instagram_title": "Instagram",
+    "instagram": "<a href='https://instagram.com/zazracnapartia' target='_blank' class='text-secondary hover:text-primary transition-colors'>@zazracnapartia</a>"
+}

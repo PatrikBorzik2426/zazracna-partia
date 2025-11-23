@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Služby Zázračnej partie - kompletné animačné programy pre deti. Maľovanie na tvár, maskoti, tvorivé dielne, trblietavé tetovanie. Cenník a galéria prác.">
+    <meta name="keywords" content="služby, animačné programy, deti, maľovanie na tvár, maskoti, tvorivé dielne, cenník, Bratislava">
+    <meta name="author" content="Zázračná partia">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Slovak">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.zazracnapartia.sk/sluzby">
+    <meta property="og:title" content="Služby - Zázračná partia | Animačné programy">
+    <meta property="og:description" content="Pozrite si naše služby - maľovanie na tvár, maskoti, tvorivé dielne. Kompletný cenník a galéria našich prác.">
+    <meta property="og:image" content="https://www.zazracnapartia.sk/img/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.zazracnapartia.sk/sluzby">
+    <meta property="twitter:title" content="Služby - Zázračná partia | Animačné programy">
+    <meta property="twitter:description" content="Pozrite si naše služby - maľovanie na tvár, maskoti, tvorivé dielne. Kompletný cenník a galéria našich prác.">
+    <meta property="twitter:image" content="https://www.zazracnapartia.sk/img/og-image.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.zazracnapartia.sk/sluzby">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <link href="./css/output.css" rel="stylesheet">
+    <title>Služby - Zázračná partia | Cenník animačných programov</title>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "provider": {
+            "@type": "Organization",
+            "name": "Zázračná partia"
+        },
+        "serviceType": "Animačné programy pre deti",
+        "description": "Maľovanie na tvár, maskoti, tvorivé dielne a ďalšie animačné služby pre deti",
+        "offers": [
+            {
+                "@type": "Offer",
+                "name": "Maľovanie na tvár",
+                "price": "50",
+                "priceCurrency": "EUR",
+                "priceSpecification": "Od 50€ za hodinu"
+            },
+            {
+                "@type": "Offer",
+                "name": "Maskoti",
+                "price": "100",
+                "priceCurrency": "EUR",
+                "priceSpecification": "Od 100€ za hodinu"
+            }
+        ]
+    }
+    </script>
+</head>
+
+<body class="min-h-screen bg-background m-0 p-0 py-12">
+    <nav class="fixed w-screen top-0 h-16 md:h-12 flex items-center justify-center backdrop-blur-md z-50 bg-background/80">
+        <div class="flex w-screen justify-between items-center max-w-6xl px-4 font-cherry">
+            <h1 class="text-2xl md:text-4xl text-primary"><a href="./index.html"><span class="text-secondary">Zázračná</span> partia</a></h1>
+            <ul class="flex justify-center items-center gap-3 md:gap-6 font-light text-primary text-sm md:text-base">
+                <li class="hover:text-secondary hover:cursor-pointer transition-colors duration-200"><a href="./index.html" class="px-2 py-1">Domov</a></li>
+                <li class="hover:text-secondary hover:cursor-pointer transition-colors duration-200"><a href="./index.html#akcie" class="px-2 py-1">Akcie</a></li>
+                <li class="hover:text-secondary hover:cursor-pointer transition-colors duration-200"><a href="./sluzby.html" class="px-2 py-1">Služby</a></li>
+                <li class="hover:text-secondary hover:cursor-pointer transition-colors duration-200"><a href="./kontakt.html" class="px-2 py-1">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main class=" w-screen min-h-screen flex flex-col gap-8 text-center max-w-6xl mx-auto pt-20 md:pt-16">
+        <h1 class=" text-8xl mb-8 text-primary font-cherry animate-fade-down animate-duration-1000 "><span
+                class=" text-secondary">Služby</span></h1>
+        <p id="services_description" class=" text-primary animate-fade-right animate-delay-1000 mb-8"></p>
+        
+        <section class="mb-16">
+            <h2 id="pricing_title" class="text-6xl font-cherry text-primary mb-8"></h2>
+            <div id="pricing_container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Pricing cards will be populated by JavaScript -->
+            </div>
+        </section>
+        
+        <section>
+            <h2 id="gallery_title" class="text-6xl font-cherry text-primary mb-4"></h2>
+            <p id="gallery_description" class="text-primary mb-8"></p>
+            <div id="gallery_container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Gallery images will be populated by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/cache-manager.js"></script>
+    <script src="./js/services.js"></script>
+</body>
+
+</html>

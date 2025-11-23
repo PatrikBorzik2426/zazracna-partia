@@ -1,0 +1,71 @@
+{
+    "services_title": "Naše služby",
+    "services_description": "Ponúkame širokú škálu animačných programov pre deti a rodiny. Každá služba je prispôsobená vašim potrebám.",
+    "pricing_title": "Cenník služieb",
+    "pricing": [
+        {
+            "name": "Maľovanie na tvár",
+            "price": "Od 50€ za hodinu",
+            "description": "Kreatívne maľovanie tvárí pre deti na rôzne témy."
+        },
+        {
+            "name": "Maskoti",
+            "price": "Od 100€ za hodinu",
+            "description": "Naši maskoti zabavia deti a vytvoria nezabudnuteľné zážitky."
+        },
+        {
+            "name": "Tvorivé dielne",
+            "price": "Od 80€ za hodinu",
+            "description": "Rôzne tvorivé aktivity pre deti všetkých vekových skupín."
+        },
+        {
+            "name": "Trblietavé tetovanie",
+            "price": "Od 40€ za hodinu",
+            "description": "Bezpečné a zábavné tetovanie pre deti."
+        },
+        {
+            "name": "Balóniková šou",
+            "price": "Od 70€ za hodinu",
+            "description": "Zručnosti s balónikmi a tvorba balónikových figúr."
+        },
+        {
+            "name": "Kompletný animačný program",
+            "price": "Od 200€ za 2 hodiny",
+            "description": "Kombinácia všetkých našich služieb pre maximálnu zábavu."
+        }
+    ],
+    "gallery_title": "Galéria našich prác",
+    "gallery_description": "Pozrite si fotografie z našich predchádzajúcich akcií a služieb.",
+    "gallery_images": [
+        {
+            "src": "./img/face_painting1.jpeg",
+            "alt": "Maľovanie na tvár na detskej oslave",
+            "caption": "Detská oslava s maľovaním na tvár"
+        },
+        {
+            "src": "./img/face_painting2.jpeg",
+            "alt": "Kreatívne maľovanie tvárí",
+            "caption": "Kreatívne maľovanie pre deti"
+        },
+        {
+            "src": "./img/face_painting3.jpeg",
+            "alt": "Maľovanie na tvár rôzne motívy",
+            "caption": "Rôzne motívy maľovania"
+        },
+        {
+            "src": "./img/face_painting4.jpeg",
+            "alt": "Profesionálne maľovanie tvárí",
+            "caption": "Profesionálne výsledky"
+        },
+        {
+            "src": "./img/maskots_1.jpeg",
+            "alt": "Maskot s deťmi",
+            "caption": "Naši maskoti v akcii"
+        },
+        {
+            "src": "./img/maskots_2.jpeg",
+            "alt": "Zábava s maskotom",
+            "caption": "Zábava pre všetkých"
+        }
+    ]
+}

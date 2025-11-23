@@ -1,41 +1,107 @@
 <!doctype html>
-<html>
+<html lang="sk">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontaktujte Zázračnú partiu - animačné programy pre deti. Adresa, telefón, email a otváracie hodiny. Objednajte si maľovanie na tvár alebo maskotov pre vašu oslavu.">
+    <meta name="keywords" content="kontakt, Zázračná partia, animačné programy, deti, Bratislava, objednávka">
+    <meta name="author" content="Zázračná partia">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Slovak">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.zazracnapartia.sk/kontakt">
+    <meta property="og:title" content="Kontakt - Zázračná partia">
+    <meta property="og:description" content="Kontaktujte nás pre animačné programy. Maľovanie na tvár, maskoti a tvorivé dielne pre vaše deti.">
+    <meta property="og:image" content="https://www.zazracnapartia.sk/img/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.zazracnapartia.sk/kontakt">
+    <meta property="twitter:title" content="Kontakt - Zázračná partia">
+    <meta property="twitter:description" content="Kontaktujte nás pre animačné programy. Maľovanie na tvár, maskoti a tvorivé dielne pre vaše deti.">
+    <meta property="twitter:image" content="https://www.zazracnapartia.sk/img/og-image.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.zazracnapartia.sk/kontakt">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
     <link href="./css/output.css" rel="stylesheet">
-    <title>Kontakt - Zázračná partia</title>
+    <title>Kontakt - Zázračná partia | Animačné programy pre deti</title>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "Zázračná partia",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Ulice 123",
+                "addressLocality": "Bratislava",
+                "addressCountry": "SK"
+            },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+421-123-456-789",
+                "email": "info@zazracnapartia.sk",
+                "contactType": "customer service"
+            }
+        }
+    }
+    </script>
 </head>
 
 <body class="min-h-screen bg-background m-0 p-0 ">
-    <nav class="fixed w-screen top-0 h-12 flex items-center justify-center backdrop-blur-md z-50">
-        <div class="flex w-screen justify-between items-center max-w-6xl font-cherry">
-            <h1 class=" text-4xl text-primary "><a href=""><span class=" text-secondary">Zázračná</span> partia</a></h1>
-            <ul class=" flex justify-center items-center gap-6 font-light text-primary">
-                <li class=" mx-auto hover:text-secondary hover:cursor-pointer transition-colors duration-200"><a href="./index.html">Domov</a></li>
-                <li class=" mx-auto hover:text-secondary hover:cursor-pointer transition-colors duration-200"><a href="./index.html">Akcie</a></li>
-                <li class=" mx-auto hover:text-secondary hover:cursor-pointer transition-colors duration-200">Služby</li>
-                <li class=" mx-auto hover:text-secondary hover:cursor-pointer transition-colors duration-200">Kontakt</li>
+    <nav class="fixed w-screen top-0 h-16 md:h-12 flex items-center justify-center backdrop-blur-md z-50 bg-background/80">
+        <div class="flex w-screen justify-between items-center max-w-6xl px-4 font-cherry">
+            <h1 class="text-2xl md:text-4xl text-primary"><a href="./index.html"><span class="text-secondary">Zázračná</span> partia</a></h1>
+            <ul class="flex justify-center items-center gap-3 md:gap-6 font-light text-primary text-sm md:text-base">
+                <li class="hover:text-secondary hover:cursor-pointer transition-colors duration-200"><a href="./index.html" class="px-2 py-1">Domov</a></li>
+                <li class="hover:text-secondary hover:cursor-pointer transition-colors duration-200"><a href="./index.html#akcie" class="px-2 py-1">Akcie</a></li>
+                <li class="hover:text-secondary hover:cursor-pointer transition-colors duration-200"><a href="./sluzby.html" class="px-2 py-1">Služby</a></li>
+                <li class="hover:text-secondary hover:cursor-pointer transition-colors duration-200"><a href="./kontakt.html" class="px-2 py-1">Kontakt</a></li>
             </ul>
         </div>
     </nav>
-    <main class=" w-screen min-h-screen flex flex-col justify-center gap-8 text-center max-w-6xl mx-auto">
+    <main class="w-screen min-h-screen flex flex-col justify-center gap-8 text-center max-w-6xl mx-auto pt-20 md:pt-16">
         <h1 class=" text-8xl mb-8 text-primary font-cherry animate-fade-down animate-duration-1000 "><span
                 class=" text-secondary">Kontakt</span></h1>
-        <div class=" grid grid-cols-4">
-            <ul>
-                <div >
-
-                </div>
-            </ul>
-
+        <p id="contact_description" class=" text-primary animate-fade-right animate-delay-1000 mb-8"></p>
+        
+        <div class="flex flex-col md:flex-row gap-8 w-full justify-center items-start flex-wrap">
+            <div class="flex-1 min-w-0 text-left">
+                <h2 id="address_title" class="text-4xl font-cherry text-primary mb-2"></h2>
+                <p id="address" class="text-primary"></p>
+            </div>
+            
+            <div class="flex-1 min-w-0 text-left">
+                <h2 id="phone_title" class="text-4xl font-cherry text-primary mb-2"></h2>
+                <p id="phone" class="text-primary"></p>
+            </div>
+            
+            <div class="flex-1 min-w-0 text-left">
+                <h2 id="email_title" class="text-4xl font-cherry text-primary mb-2"></h2>
+                <p id="email" class="text-primary"></p>
+            </div>
+            
+            <div class="flex-1 min-w-0 text-left">
+                <h2 id="instagram_title" class="text-4xl font-cherry text-primary mb-2"></h2>
+                <p id="instagram" class="text-primary"></p>
+            </div>
         </div>
-
     </main>
   
 
-    <script src="./index.js"></script>
+    <script src="./js/cache-manager.js"></script>
+    <script src="./js/contact.js"></script>
 </body>
 
 </html>
