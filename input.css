@@ -3,8 +3,8 @@
 /* Load local Lucky Bones font and expose it as "Lucky Bones" */
 @font-face {
     font-family: 'Lucky Bones';
-    /* Use absolute path so compiled CSS (in src/css/output.css) and dev server both resolve correctly */
-    src: url('/fonts/lucky_bones.otf') format('opentype');
+    /* Use relative path for GitHub Pages compatibility */
+    src: url('../fonts/lucky_bones.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
